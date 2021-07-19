@@ -23,7 +23,7 @@ def get_sent_labels(token_list):
             token, label = line.rstrip().split()
             sent_labels.append(label)
     return sentences
-
+ 
 def get_sent_tokens(token_list):
     sent_tokens, sentences, sent_start = [], [], 0
     for i, line in enumerate(token_list):
