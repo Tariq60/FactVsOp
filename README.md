@@ -9,7 +9,7 @@ It also has a script for training the svm model and extracting BERT embedding fe
 
 To train a rnn+bert model, you need:
 1. fine-tune a bert sentence-level classifier for argument component tagging (claim, premise, other), which can be done using
-<br>[huggingface script for text classification](https://github.com/huggingface/transformers/tree/master/examples/pytorch/text-classification)
+[huggingface script for text classification](https://github.com/huggingface/transformers/tree/master/examples/pytorch/text-classification)
 2. extract bert embeddings by running a code similar to [extract_bert_features.py](https://github.com/Tariq60/FactVsOp/blob/master/src/features/extract_bert_features.py)
 3. train the rnn+bert model using argumentation features and embeddings by running a code similar to [train_rnn_bert.py](https://github.com/Tariq60/FactVsOp/blob/master/src/models/train_rnn_bert.py)
 
